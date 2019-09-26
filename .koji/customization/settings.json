@@ -1,0 +1,50 @@
+{
+  "settings": {
+    "name": "Calculator",
+    "inputs": "amount, tip, split",
+    "procedure": "(amount + (amount * tip)) / split",
+    "errorMessage": "error",
+    "locale": "US_en",
+    "fontFamily": "Be Vietnam"
+  },
+  "@@editor": [
+    {
+      "key": "settings",
+      "name": "App settings",
+      "icon": "⚙️",
+      "source": "settings.json",
+      "fields": [
+        {
+          "key": "name",
+          "name": "App name",
+          "type": "text"
+        },
+        {
+          "key": "inputs",
+          "name": "Inputs",
+          "type": "text"
+        },
+        {
+          "key": "procedure",
+          "name": "Procedure",
+          "type": "text"
+        },
+        {
+          "key": "errorMessage",
+          "name": "Error Message",
+          "type": "text"
+        },
+        {
+          "key": "locale",
+          "name": "Locale",
+          "type": "text"
+        },
+        {
+          "key": "fontFamily",
+          "name": "Google Font Family",
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}

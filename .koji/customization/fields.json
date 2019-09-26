@@ -1,0 +1,32 @@
+{
+  "fields": {
+    "fieldNames": "activity, heartrate",
+    "fieldLabels": "Enter the activity, Enter your hear rate",
+    "fieldTypes": "string, number"
+  },
+  "@@editor": [
+    {
+      "key": "fields",
+      "name": "Fields",
+      "icon": "ℹ️",
+      "source": "fields.json",
+      "fields": [
+        {
+          "key": "fieldNames",
+          "name": "Field Names",
+          "type": "text"
+        },
+        {
+          "key": "fieldLabels",
+          "name": "Field Labels",
+          "type": "text"
+        },
+        {
+          "key": "fieldTypes",
+          "name": "Field Types",
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
