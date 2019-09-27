@@ -15,7 +15,10 @@ class App {
 
     addClickHandler() {
         document.addEventListener('click', (event) => {
-            if (event.target.matches('#run')) {
+            let { action } = event.target.dataset;
+            if (!action) { return; }
+
+            if (action === 'run') {
                 this.setState({
                     result: this.run()
                 })
@@ -64,7 +67,7 @@ class App {
                 `
             }).join('')}
             <div>${this.state.result}</div>
-            <div id="run" class="button">Run</div>
+            <div data-action="run" class="button">Run</div>
         </div>
         `
     }
